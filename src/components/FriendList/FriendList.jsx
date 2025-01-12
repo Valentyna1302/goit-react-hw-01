@@ -21,7 +21,11 @@ function FriendListItem({ avatar, name, isOnline }) {
     <div>
       <img src={avatar} alt="Avatar" width="48" />
       <p>{name}</p>
-      <p>{isOnline ? "Online" : "Offline"}</p>
+      {isOnline ? (
+        <p style={{ color: "green" }}>Online</p>
+      ) : (
+        <p style={{ color: "red" }}>Offline</p>
+      )}
     </div>
   );
 }
