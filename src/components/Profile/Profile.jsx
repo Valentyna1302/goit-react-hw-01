@@ -1,24 +1,27 @@
+import css from "./Profile.module.css";
+
 export default function Profile({ name, tag, location, image, stats }) {
   return (
-    <div>
-      <div>
-        <img src={image} alt="User avatar" />
-        <p>{name}</p>
-        <p>@{tag}</p>
-        <p>{location}</p>
+    <div className={css.userCard}>
+      <div className={css.userInfo}>
+        <img className={css.userImage} src={image} alt="User avatar" />
+        <p className={css.userName}>{name}</p>
+        <p className={css.userLocation}>@{tag}</p>
+        <p className={css.userLocation}>{location}</p>
       </div>
 
-      <ul>
-        <li>
-          <span>Followers</span> <span>{stats.followers}</span>
+      <ul className={css.userStateslist}>
+        <li className={css.userStatesItem}>
+          <span>Followers</span>{" "}
+          <span className={css.userStatesAmount}>{stats.followers}</span>
         </li>
-        <li>
+        <li className={css.userStatesItem}>
           <span>Views</span>
-          <span>{stats.views}</span>
+          <span className={css.userStatesAmount}>{stats.views}</span>
         </li>
-        <li>
+        <li className={css.userStatesItem}>
           <span>Likes</span>
-          <span>{stats.likes}</span>
+          <span className={css.userStatesAmount}>{stats.likes}</span>
         </li>
       </ul>
     </div>

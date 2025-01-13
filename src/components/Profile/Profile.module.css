@@ -1,0 +1,52 @@
+.userCard {
+  max-width: 300px;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding-top: 8px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+
+.userInfo {
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.userImage {
+  border-radius: 100%;
+  width: 130px;
+  background-color: #303030;
+  margin-bottom: 10px;
+}
+
+.userName {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.userLocation {
+  color: gray;
+}
+
+.userStateslist {
+  display: flex;
+  background-color: #d3d3d3;
+  justify-content: space-between;
+}
+
+.userStatesItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  border: 1px solid #c0c0c0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.userStatesAmount {
+  font-weight: bold;
+}
