@@ -1,9 +1,11 @@
+import css from "./FriendList.module.css";
+
 export default function FriendList({ friends }) {
   return (
-    <ul>
+    <ul className={css.friendsList}>
       {friends.map((friend) => {
         return (
-          <li key={friend.id}>
+          <li className={css.friendsItem} key={friend.id}>
             <FriendListItem
               name={friend.name}
               avatar={friend.avatar}
@@ -19,7 +21,7 @@ export default function FriendList({ friends }) {
 function FriendListItem({ avatar, name, isOnline }) {
   return (
     <div>
-      <img src={avatar} alt="Avatar" width="48" />
+      <img className={css.friendsImg} src={avatar} alt="Avatar" width="48" />
       <p>{name}</p>
       {isOnline ? (
         <p style={{ color: "green" }}>Online</p>

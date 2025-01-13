@@ -1,0 +1,27 @@
+.transactionTable {
+  width: 500px;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 16px;
+  margin: 0 auto;
+}
+
+.transactionTableTitle {
+  background-color: #383838;
+  color: white;
+}
+
+.transactionTableList:nth-child(even) {
+  background-color: #c0c0c0;
+}
+
+.transactiontablelist {
+  vertical-align: middle;
+}
+
+.transactionTableItem {
+  text-align: center;
+  border: 1px solid black;
+  padding: 6px;
+  text-transform: capitalize;
+}
