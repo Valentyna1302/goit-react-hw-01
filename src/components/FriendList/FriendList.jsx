@@ -1,3 +1,4 @@
+import FriendListItem from "../FriendListItem/FriendListItem";
 import css from "./FriendList.module.css";
 
 export default function FriendList({ friends }) {
@@ -15,19 +16,5 @@ export default function FriendList({ friends }) {
         );
       })}
     </ul>
-  );
-}
-
-function FriendListItem({ avatar, name, isOnline }) {
-  return (
-    <div>
-      <img className={css.friendsImg} src={avatar} alt="Avatar" width="48" />
-      <p>{name}</p>
-      {isOnline ? (
-        <p style={{ color: "green" }}>Online</p>
-      ) : (
-        <p style={{ color: "red" }}>Offline</p>
-      )}
-    </div>
   );
 }
